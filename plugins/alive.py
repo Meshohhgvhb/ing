@@ -86,13 +86,25 @@ async def start_(client: Client, message: Message):
 @Client.on_message(commandpro(["/start", "/alive", "aditya"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/6111837a4b2586e21e96c.jpg",
-        caption=f"""""",
+        photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
+        caption=f"""
+╭─────────╮
+│ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 ꕸ
+│╭────────╯
+││╔╦╦╦═╦╗╔═╦═╦══╦═╗ 
+││║║║║╩╣╚╣═╣║║║║║╩╣
+│╰╚══╩═╩═╩═╩═╩╩╩╩═╝
+│╭ᯓ البوت يعمل بنجاح👌🏻
+│╰────────╮
+│ᯓ 𝐓𝑳𝐀𝐒𝐇𝐀𝐍𝐘 ꕸ
+╰─────────╯
+        
+        """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "البوت يعمل بنجاح 👍🏻.", url=f"https://t.me/xl444")
+                        "𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2")
                 ]
             ]
         ),
