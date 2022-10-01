@@ -89,7 +89,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"Powered By: bm (@xl444)",
+        f"Powered By: bm (@m_o_mol )",
         (255, 255, 255),
         font=font,
     )
@@ -109,7 +109,7 @@ async def play(_, message: Message):
     global que
     global useer
     
-    lel = await message.reply("**🎉**")
+    lel = await message.reply("**⚡**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
