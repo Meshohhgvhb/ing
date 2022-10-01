@@ -164,7 +164,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://te.legra.ph/file/46fa55b49b85c084159ce.png"
+        thumb_name = "https://telegra.ph/file/7a82f4eb633ca54ea7d3b.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -173,8 +173,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="𝖲𝗈𝗇!g .",
-                            url=f"https://t.me/VVYVV6")
+                            text="𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹",
+                            url=f"https://t.me/tlashany2")
 
                 ]
             ]
@@ -212,8 +212,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text=" 𝖲𝗈𝗇!g .",
-                            url=f"https://t.me/VVYVV6")
+                            text="𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹",
+                            url=f"https://t.me/tlashany2")
 
                 ]
             ]
@@ -228,8 +228,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text=" 𝖲𝗈𝗇!g .",
-                            url=f"https://t.me/rr8r9")
+                            text="𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹",
+                            url=f"https://t.me/tlashany2")
 
                 ]
             ]
@@ -237,7 +237,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅقت اެݪمحدد: {DURATION_LIMIT} ❤️‍🔥.**"
+                f"**تم الانتهاء من التشغيل🎉 {DURATION_LIMIT} **"
             )
             return
         requested_by = message.from_user.first_name
@@ -246,9 +246,9 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "**اެݪࢪجاެ۽ اެݪࢪد عݪى مݪف صۅتي اެۅٛ اެعطاެ۽ شي ݪݪبحث🦴.**"
+                "**الرجاء الرد ع ملف صوتي 🎉**"
             )
-        await lel.edit("جاެࢪي اެݪبحث❤️‍🔥.")
+        await lel.edit("جاري البحث.. ")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -272,7 +272,7 @@ async def play(_, message: Message):
                 secmul *= 60
         except Exception as e:
             await lel.edit(
-                "**ݪم يتم اެݪعثۅٛࢪ عݪى اެغنيةه جࢪب اެࢪساެݪ ࢪاެبط اެݪاެغنيةه ❤️‍🔥.**"
+                "**لم يتم  اتمكن من جلب الاغنيه ارسل لي الرابط**"
             )
             print(str(e))
             return
@@ -281,8 +281,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text=" 𝖲𝗈𝗇!g .",
-                            url=f"https://t.me/VVYVV6")
+                            text="𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹",
+                            url=f"https://t.me/tlashany2")
 
                 ]
             ]
@@ -290,7 +290,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅٛقت اެݪمحدد {DURATION_LIMIT} ❤️‍🔥.**"
+                f"**تم الانتهاء من التشغيل🎉 {DURATION_LIMIT}**"
             )
             return
         requested_by = message.from_user.first_name
@@ -303,8 +303,8 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
-            photo="https://te.legra.ph/file/e9667fc76b311f97fa0e3.jpg",
-            caption="**ݪك عاެشش تم اެضاެف اެݪاެغنيةه اެݪى قاެئمةه اެݪاެنتضاެࢪ ࢪقم » `{}` ❤️‍🔥.**".format(position),
+            photo="https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
+            caption="**تم الاضافه الي الانتظار  `{}`🎉**".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -319,12 +319,12 @@ async def play(_, message: Message):
             )
 
         await message.reply_photo(
-            photo="https://te.legra.ph/file/407ce4c57a645c11f65c0.png",
+            photo="https://telegra.ph/file/7a82f4eb633ca54ea7d3b.png",
             reply_markup=keyboard,
-            caption="**تم حبي ذۅقك حݪۅ بـ اެݪاެغاެني ۅهاެي شغݪتهاެ تدݪݪ ❤️‍🔥.**".format(),
+            caption="**تم تشغيل الاغانيه بنجاح🎉.**".format(),
            )
 
-    os.remove("https://te.legra.ph/file/407ce4c57a645c11f65c0.png")
+    os.remove("https://telegra.ph/file/7a82f4eb633ca54ea7d3b.png")
     return await lel.delete()
     
     
@@ -333,7 +333,7 @@ async def play(_, message: Message):
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/46fa55b49b85c084159ce.png", 
+                             photo="https://telegra.ph/file/7a82f4eb633ca54ea7d3b.png", 
                              caption="**تم الإيقاف مؤقتا ،  **"
     )
 
@@ -343,13 +343,13 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/402c519808f75bd9b1803.jpg", 
-                             caption="**تم اެݪاެستمࢪاެࢪ بنجاެح❤️‍🔥.**"
+                             photo="https://telegra.ph/file/1838d6ee695608a4fff29.jpg", 
+                             caption="**تم استمرار التشغيل🎉**"
     )
 
 
 
-@Client.on_message(commandpro(["تخطي", "تخ", "ت", "/s"]) & other_filters)
+@Client.on_message(commandpro(["تخطي", "تخ", "ت", "/skip"]) & other_filters)
 @authorized_users_only
 async def skip(_, message: Message):
     global que
@@ -358,7 +358,7 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**ݪك مۅٛ تدݪݪ ياެمطۅࢪنةه خاެدم ۅممنۅن ❤️‍🔥.**")
+        await message.reply_text("**تم تخطي الاغنيه بامر من المطور 🎉**")
     else:
         queues.task_done(chat_id)
         
