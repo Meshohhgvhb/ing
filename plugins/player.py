@@ -376,12 +376,12 @@ async def skip(_, message: Message):
 
 
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/ff43de16d318f461088c7.png", 
-                             caption=f'**ݪاެ مۅٛ جاެنت حݪۅٛه ݪيش سۅيت تخطي بس تم تدݪݪ ❤️‍🔥.**'
+                             photo="https://telegra.ph/file/7a82f4eb633ca54ea7d3b.png", 
+                             caption=f'**تم تخطي التشغيل🎉**'
    ) 
 
 
-@Client.on_message(commandpro(["/ايقاف", "/e", "/اوكف", "كافي", "x"]) & other_filters)
+@Client.on_message(commandpro(["ايقاف" ,"اسكت" ,"اخرس" ,"كافي", "/end"]) & other_filters)
 @authorized_users_only
 async def stop(_, message: Message):
     try:
@@ -391,8 +391,8 @@ async def stop(_, message: Message):
 
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/e9667fc76b311f97fa0e3.jpg", 
-                             caption="**ݪك مۅ تدݪݪ ياެمطۅࢪنةه خاެدم ۅممنۅن ❤️‍🔥..**"
+                             photo="https://telegra.ph/file/1838d6ee695608a4fff29.jpg", 
+                             caption="**تم إيقاف التشغيل بنجاح🎉..**"
     )
 
 
@@ -408,6 +408,6 @@ async def admincache(client, message: Message):
     )
 
     await message.reply_photo(
-                              photo="https://te.legra.ph/file/08cec0a2a844713e1624a.jpg",
-                              caption="**تم تحديث اެݪسۅࢪس ياެمطۅࢪي ❤️‍🔥.**"
+                              photo="https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
+                              caption="**تم تحديث السورس لديك اخر إصدار🎉**"
     )
