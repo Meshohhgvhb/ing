@@ -109,7 +109,7 @@ async def play(_, message: Message):
     global que
     global useer
     
-    lel = await message.reply("**جاެࢪي اެݪتشغيݪ ❤️‍🔥**")
+    lel = await message.reply("**🎉**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -129,13 +129,13 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "**مࢪحباެ ، اެناެ بۅت بسيط مقدم من مطۅࢪي ، ݪتشغيݪ اެݪاغاެني ، اެࢪفعني مشࢪف ۅاެستمتع 🤍.**")
+                        "**مرحبا انا بوت لتشغيل الموسيقى🎉**")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "** سݪاެم عݪيكم شباެب اެسف ع اެݪتأخيࢪ بس جنت اެتࢪيك ۅٛهسه اެجيت ࢪاެح اެغني❤️‍🔥**")
+                        message.chat.id, "**سوف اقوم بتشغيل الموسيقى🎉**")
 
                 except UserAlreadyParticipant:
                     pass
