@@ -57,16 +57,25 @@ async def start_(client: Client, message: Message):
 
 **""",
     reply_markup=InlineKeyboardMarkup(
-            [],
-
-            [ 
+            [
                 [
                     InlineKeyboardButton(
                         "𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),
                     ],
             [
                 InlineKeyboardButton("اضفنيـ المجموعة ", url=f'https://t.me/MUSIC_TLASHANYBot?startgroup=true'),
-                
+               ],
+            [ 
+                InlineKeyboardButton(
+
+                        "Group t͠l͠a͠s͠h͠a͠n͠y͠ 𖠹", url=f"https://t.me/blaci0"),
+                InlineKeyboardButton(
+                        "𖠹s͠o͠u͠r͠c͠e͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/m_o_mol"),
+                ],
+            [ 
+                InlineKeyboardButton(
+
+                        "programmer", url=f"https://t.me/m_e_s_h_o"),
                 ]
                 
            ]
