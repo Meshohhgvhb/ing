@@ -141,12 +141,12 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**عݪيك اެضاެفةه حساެب اެݪمساެعد في اެݪمجمۅعةه ݪݪتشغيݪ ❤️‍🔥.** ")
+                        f"**عليك اضافه الحساب المساعد🎉** ")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**عݪيك اެضاެفةه حساެب اެݪمساެعد في اެݪمجمۅعةه ݪݪتشغيݪ ❤️‍🔥.*")
+            f"**عليك اضافه الحساب المساعد لتشغيل الموسيقى🎉*")
         return
     
     audio = (
@@ -159,7 +159,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅٛقت اެݪمحدد: {DURATION_LIMIT} ❤️‍🔥.**"
+                f"**تم الانتهاء من التشغيل 🎉{DURATION_LIMIT} **"
             )
 
         file_name = get_file_name(audio)
