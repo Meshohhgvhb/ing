@@ -272,7 +272,7 @@ async def play(_, message: Message):
                 secmul *= 60
         except Exception as e:
             await lel.edit(
-                "**لم يتم  اتمكن من جلب الاغنيه ارسل لي الرابط**"
+                "**لم اتمكن من جلب الاغنيه ارسل لي الرابط**"
             )
             print(str(e))
             return
